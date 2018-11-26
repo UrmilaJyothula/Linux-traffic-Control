@@ -1,0 +1,27 @@
+<html>
+<head>
+<link rel="stylesheet" href="stys.css">
+</head>
+<body style="background-color:#EAFAF1">
+<form action="http://localhost:5000/ip_traffic" method="POST">
+  <fieldset>
+  <legend><big><b>&nbsp Block/Unblock Traffic:&nbsp<b></big></legend>
+  <div class="p1">
+    <label style="font-size:20px"><b>IP Address:</b></label>
+    <input type="text" placeholder="Enter shaper IP Address" name="ip" required>
+    <br \>
+    <label style="font-size:22px"><b>Action:</b></label>
+    <select name="action" id ="drop">
+    <option value="Block">Block</option>
+    <option value="Unblock">Unblock</option>
+  </select>
+  <br \>
+  <br \>
+  <label style="font-size:22px"><b>System IP Address:</b></label>
+    <input type="text" placeholder="Enter system IP Address to perform action" name="filterip" required>
+    <button type="submit"> Apply Traffic filter</button>
+    </div>
+   </fieldset>
+</form>
+</body>
+</html>
